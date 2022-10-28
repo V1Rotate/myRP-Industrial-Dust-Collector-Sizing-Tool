@@ -1,0 +1,25 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_list {
+    li {
+      margin-top: 10px;
+      list-style-type: none;
+      background-color: white;
+      width: 250px;
+      border-radius: 5px;
+      height: 30px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover,
+      &:focus,
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

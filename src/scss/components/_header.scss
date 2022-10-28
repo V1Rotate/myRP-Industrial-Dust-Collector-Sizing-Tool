@@ -1,0 +1,14 @@
+@import './variables';
+
+.logoSection {
+  height: 5vh;
+  padding-top: 10px;
+  background-color: $blueBg;
+
+  img {
+    width: 240px;
+    height: 60px;
+    display: block;
+    margin: auto;
+  }
+}

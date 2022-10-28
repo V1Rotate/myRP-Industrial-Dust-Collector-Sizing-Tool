@@ -1,0 +1,21 @@
+@import './variables';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: $blueBg;
+  color: $white;
+
+  h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 3px;
+
+    span {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import './variables';
+
+.fullCollectorItem-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  @media (max-width: 750px) {
+    margin-top: 250px;
+  }
+
+  &_img {
+    width: 1500px;
+    @media (max-width: 1600px) {
+      width: 1440px;
+    }
+    @media (max-width: 1500px) {
+      width: 1240px;
+    }
+    @media (max-width: 1250px) {
+      width: 1000px;
+    }
+    @media (max-width: 1050px) {
+      width: 700px;
+    }
+    @media (max-width: 750px) {
+      width: 470px;
+    }
+  }
+
+  &_title {
+    margin-top: 10px;
+    font-size: 24px;
+    color: $blueFont;
+
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
+  }
+
+  &_btn {
+    background-color: $blueFont;
+    text-align: center;
+    padding: 20px auto;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid $blueBg;
+    border-radius: 35px;
+    color: $white;
+    width: 110px;
+    height: 45px;
+    margin-top: 20px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+      width: 90px;
+      height: 40px;
+    }
+    &:hover,
+    &:active {
+      background-color: $orange;
+      transition: 0.25s ease-in-out;
+      color: $white;
+    }
+  }
+}

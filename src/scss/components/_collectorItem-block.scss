@@ -1,0 +1,67 @@
+@import './variables';
+
+.collectorItem-block {
+  margin-bottom: 10px;
+  margin-right: 50px;
+  transition: all 0.2s ease-in-out;
+
+  &_link {
+    text-decoration: none;
+    color: $blueFont;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .itemImg {
+    width: 140px;
+    @media screen and (max-width: 800px) {
+      width: 100px;
+    }
+
+    &:hover {
+      background-color: #dde5f4;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+
+  .collectorItem-title {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-decoration: none !important;
+    color: $blueFont;
+  }
+
+  .cBlockBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+    .washItemBlock-addBtn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.content-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin-right: 50px;
+}
+
+.collectorItem-title {
+  padding-left: 5px;
+}

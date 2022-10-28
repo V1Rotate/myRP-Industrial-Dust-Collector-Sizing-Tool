@@ -1,0 +1,174 @@
+@import '../components/variables';
+
+.save {
+  color: $blueFont;
+  @media screen and (max-width: 800px) {
+    width: 600px;
+  }
+
+  &__image {
+    display: block;
+    margin: 60px auto;
+    width: 400px;
+    @media screen and (max-width: 500px) {
+      width: 350px;
+      margin-right: 180px;
+    }
+  }
+}
+
+.save-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-decoration: underline;
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-right: 60px;
+  }
+}
+
+.save-grid {
+  display: grid;
+  grid-template-areas: 'one two';
+  gap: 8px;
+  background-color: $blueBg;
+  padding: 8px;
+  width: 770px;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 20px;
+  @media screen and (max-width: 1000px) {
+    width: 700px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 620px;
+    gap: 7px;
+    padding: 15px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 550px;
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 490px;
+    gap: 2px;
+    padding: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 440px;
+  }
+
+  & > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 13px 0;
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    @media screen and (max-width: 700px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+    }
+
+    input {
+      width: 400px;
+      padding: 3px 10px;
+      letter-spacing: 1.1px;
+      line-height: 25px;
+      font-size: 17px;
+      border: none;
+      @media screen and (max-width: 700px) {
+        width: 380px;
+        gap: 5px;
+        padding: 5px;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: normal;
+        padding: 2px 7px;
+        width: 370px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 325px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.save-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 500px) {
+    margin-right: 60px;
+  }
+
+  .saveBtn {
+    background-color: $blueFont;
+    text-align: center;
+    padding: 20px auto;
+    font-size: 18px;
+    cursor: pointer;
+    border: 3px solid $blueBg;
+    border-radius: 35px;
+    margin-right: 20px;
+    color: $white;
+    width: 110px;
+    height: 45px;
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+      width: 90px;
+      height: 40px;
+    }
+
+    .save-link {
+      text-decoration: none;
+      color: $white;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $orange;
+      transition: 0.25s ease-in-out;
+      color: $white;
+    }
+  }
+}
+.additionalNotes {
+  textarea {
+    width: 410px;
+    height: 80px;
+    padding-left: 10px;
+    letter-spacing: 1.1px;
+    line-height: 25px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    @media screen and (max-width: 600px) {
+      width: 370px;
+    }
+    @media screen and (max-width: 500px) {
+      width: 325px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 345px;
+  }
+}

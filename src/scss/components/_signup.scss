@@ -1,0 +1,94 @@
+@import './variables';
+
+.signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $blueFont;
+  margin-top: 16em;
+
+  &__header1 {
+    margin-bottom: 20px;
+  }
+
+  &__header2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  &__question {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 3px;
+    color: $blueFont;
+    font-weight: 600;
+
+    &:hover {
+      color: $orange;
+      transition: 0.25s ease-in-out;
+    }
+  }
+
+  .signUp-submit {
+    margin-top: 50px;
+    max-width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 850px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    &__email,
+    &__password {
+      font-size: 18px;
+      letter-spacing: 1px;
+
+      .signLabel {
+        @media screen and (max-width: 850px) {
+          margin-right: 7px;
+        }
+      }
+
+      input {
+        width: 300px;
+        height: 33px;
+        font-size: 18px;
+        font-weight: 300;
+        padding-left: 7px;
+        border-radius: 6px;
+        margin-bottom: 5px;
+        outline: none;
+      }
+    }
+
+    &__button {
+      color: $white;
+      background-color: $blueFont;
+      border: none;
+      border-radius: 30px;
+      width: 110px;
+      height: 45px;
+      margin-left: 30px;
+      margin-top: 15px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .btn:hover,
+    .btn:active {
+      background-color: $orange;
+      transition: 0.25s ease-in-out;
+    }
+  }
+}
