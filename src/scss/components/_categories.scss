@@ -14,11 +14,18 @@
       height: 30px;
       cursor: pointer;
       transition: all 0.2s ease-in-out;
+      @media screen and (max-width: 500px) {
+        width: 200px;
+        height: 20px;
+        margin-top: 5px;
+      }
 
       &:hover,
       &:focus,
       &:active {
-        transform: scale(1.1);
+        @media screen and (min-width: 900px) {
+          transform: scale(1.1);
+        }
       }
     }
   }
