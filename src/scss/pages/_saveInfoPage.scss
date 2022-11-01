@@ -3,16 +3,20 @@
 .save {
   color: $blueFont;
   @media screen and (max-width: 800px) {
-    width: 600px;
+    margin: 2px auto;
   }
 
   &__image {
     display: block;
     margin: 60px auto;
     width: 400px;
-    @media screen and (max-width: 500px) {
-      width: 350px;
+    @media screen and (max-width: 900px) {
+      width: 340px;
       margin-right: 180px;
+      margin: 40px auto;
+    }
+    @media screen and (max-width: 600px) {
+      display: none;
     }
   }
 }
@@ -27,16 +31,22 @@
   font-size: 15px;
   letter-spacing: 4px;
   text-decoration: underline;
-  @media screen and (max-width: 800px) {
-    font-size: 12px;
+  @media screen and (max-width: 1050px) {
+    font-size: 14px;
   }
-  @media screen and (max-width: 600px) {
-    margin-right: 60px;
+  @media screen and (max-width: 800px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
 
 .save-grid {
   display: grid;
+
   grid-template-areas: 'one two';
   gap: 8px;
   background-color: $blueBg;
@@ -45,10 +55,10 @@
   margin: 20px auto;
   border-radius: 15px;
   padding: 20px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1350px) {
     width: 700px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1120px) {
     width: 620px;
     gap: 7px;
     padding: 15px;
@@ -63,7 +73,9 @@
     padding: 10px;
   }
   @media screen and (max-width: 500px) {
-    width: 440px;
+    width: 300px;
+    justify-content: center;
+    margin: auto;
   }
 
   & > div {
@@ -74,10 +86,13 @@
     font-size: 20px;
     font-weight: 400;
     @media screen and (max-width: 700px) {
-      font-size: 18px;
+      font-size: 16px;
     }
     @media screen and (max-width: 600px) {
       font-size: 14px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
     }
 
     input {
@@ -88,19 +103,23 @@
       font-size: 17px;
       border: none;
       @media screen and (max-width: 700px) {
-        width: 380px;
-        gap: 5px;
-        padding: 5px;
+        width: 360px;
+        gap: 3px;
+        padding: 3px;
+        line-height: 20px;
+        font-size: 16px;
       }
       @media screen and (max-width: 600px) {
         font-size: 14px;
         line-height: 20px;
         letter-spacing: normal;
-        padding: 2px 7px;
+
         width: 370px;
       }
       @media screen and (max-width: 500px) {
-        width: 325px;
+        width: 190px;
+        font-size: 9px;
+        margin: 0 5px;
       }
 
       &:focus {
@@ -116,7 +135,7 @@
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 500px) {
-    margin-right: 60px;
+    margin-top: 20px;
   }
 
   .saveBtn {
@@ -131,10 +150,15 @@
     color: $white;
     width: 110px;
     height: 45px;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 700px) {
       font-size: 14px;
       width: 90px;
       height: 40px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 10px;
+      width: 60px;
+      height: 25px;
     }
 
     .save-link {
@@ -160,15 +184,13 @@
     font-size: 17px;
     outline: none;
     border: none;
-    @media screen and (max-width: 600px) {
-      width: 370px;
+    @media screen and (max-width: 700px) {
+      width: 340px;
     }
     @media screen and (max-width: 500px) {
-      width: 325px;
+      width: 190px;
+      font-size: 9px;
+      margin: 0 5px;
     }
-  }
-
-  @media screen and (max-width: 500px) {
-    width: 345px;
   }
 }

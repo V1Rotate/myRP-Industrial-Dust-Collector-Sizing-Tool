@@ -8,14 +8,17 @@
     margin: auto;
     width: 800px;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1350px) {
       width: 700px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1120px) {
       width: 550px;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       width: 450px;
+    }
+    @media screen and (max-width: 700px) {
+      width: 300px;
     }
   }
 }
@@ -29,8 +32,15 @@
   font-size: 18px;
   letter-spacing: 4px;
   text-decoration: underline;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1050px) {
     font-size: 14px;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 8px;
+    margin-top: 50px;
   }
 }
 
@@ -45,18 +55,24 @@
   border-top-left-radius: 35px 35px;
   border-bottom-left-radius: 35px 35px;
   padding: 25px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1350px) {
     width: 700px;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1120px) {
     width: 550px;
     gap: 7px;
     padding: 20px;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     width: 430px;
     gap: 5px;
     padding: 15px;
+  }
+  @media screen and (max-width: 650px) {
+    width: 300px;
+    gap: 2px;
+    padding: 10px;
+    margin: 50px auto;
   }
 
   & > div {
@@ -65,14 +81,19 @@
     padding: 20px 0;
     font-size: 20px;
     font-weight: 400;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1350px) {
       font-size: 18px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1120px) {
       font-size: 16px;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       font-size: 14px;
+      padding: 5px 0;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 9px;
+      padding: 5px 0;
     }
   }
   & > button {
@@ -85,19 +106,25 @@
     border-radius: 35px;
     margin-right: 20px;
     color: $white;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1350px) {
       font-size: 18px;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1120px) {
       font-size: 16px;
       border: 1px solid $white;
       padding: 18px 0;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 900px) {
       font-size: 14px;
       border: 1px solid $white;
       padding: 16px 0;
       margin-right: 5px;
+    }
+    @media screen and (max-width: 650px) {
+      font-size: 8px;
+      border: 1px solid $white;
+      padding: 10px 0;
+      margin-right: 2px;
     }
 
     &:hover,
