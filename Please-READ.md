@@ -22,4 +22,4 @@ for one of the projects and why. Once form is completed, the user can print it o
 
 ---- Technologies used -----
 
-Typescript, React, Javascript, Redux Toolkit, SCSS, Firebase, API.
+Typescript, React, Redux Toolkit, SCSS, Firebase, API.
