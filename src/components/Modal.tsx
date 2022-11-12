@@ -15,8 +15,8 @@ const Modal: React.FC<ModalProps> = ({ open, onClose }) => {
         <div className='overlay-modal__text'>
           <h1>NOTE</h1>
           <p>
-            This is a practice web application for personal use only. It is{' '}
-            <span>not</span> approved by the Donaldson Company.
+            This is a personal practice project only. It is <span>not</span>{' '}
+            approved by the Donaldson Company.
           </p>
           <p>
             Logo, images, video and drawings are open source. All rights{' '}
