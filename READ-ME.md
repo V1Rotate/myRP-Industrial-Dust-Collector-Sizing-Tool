@@ -1,3 +1,7 @@
+---- Technologies used -----
+
+Typescript, React, Redux Toolkit, SCSS, Firebase, API.
+
 ---- General Idea ----
 
 I worked with Industrial Air Filtration Systems, Projects, and Technical Sales while I was working as a Sales Engineer for Conquest Equipment Corp (2018-2021). 
@@ -7,7 +11,6 @@ to have an application that makes the equipment selection process easier and fas
 working with the Donaldson equipment.
 Note: This application has one parameter – The number of filter bags, however, in fact, there is a big number of input parameters, as well as site conditions, etc. 
 So in my application, I just took one parameter, to show the idea. However, many more options may be added and the sort\selection module may be expanded.
-
 
 ---- Website ----
 
@@ -20,6 +23,3 @@ Once the user decided which RP model is preferable for his project, he can save 
 for one of the projects and why. Once form is completed, the user can print it on paper or save it as a PDF on his local storage.
 
 
----- Technologies used -----
-
-Typescript, React, Redux Toolkit, SCSS, Firebase, API.
