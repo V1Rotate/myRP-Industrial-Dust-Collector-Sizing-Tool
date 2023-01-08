@@ -17,7 +17,7 @@ const FullCollectorItem: React.FC = () => {
     async function fetchCollectorItem() {
       try {
         const { data } = await axios.get(
-          'https://6340b21416ffb7e275c45dec.mockapi.io/collectorItems/' + id
+          'SECRET_API_URL' + id
         );
         setCollectorItem(data);
       } catch (error) {
