@@ -10,7 +10,7 @@ export const fetchCollectorItems = createAsyncThunk<
 >('collectorItem/fetchCollectorItemsStatus', async (params) => {
   const { category } = params;
   const { data } = await axios.get<CollectorItem[]>(
-    `https://6340b21416ffb7e275c45dec.mockapi.io/collectorItems`,
+    `SECRET_API_URL`,
     {
       params: pickBy(
         {
